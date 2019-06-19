@@ -71,7 +71,7 @@ static void DbgConsole_PrintCallback(char *buf, int32_t *indicator, char dbgVal,
         if (((uint32_t)*indicator + 1UL) >= 128)
         {
 			int j=0;
-			while(i<(uint32_t)(*indicator)){
+			while(j<(uint32_t)(*indicator)){
 				printf_buffer[printf_w_ptr++ & PTR_MASK] = buf[j++];
 			}
             *indicator = 0;
