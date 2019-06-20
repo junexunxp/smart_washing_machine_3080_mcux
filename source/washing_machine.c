@@ -1301,3 +1301,8 @@ int wm_run(int argc, char **argv)
         }
     }
 }
+
+
+void smart_wm_init(void ){
+	xTaskCreate(wm_run, "wm_run_run", 2048 + 10, NULL, 1, NULL);
+}

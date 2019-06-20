@@ -176,7 +176,7 @@ int main(void)
     log_init();
     //linkkit_init();
 	//linkkitcsdk_init();
-    wm_init();
+        smart_wm_init();
     vTaskStartScheduler();
     while(1);
 }
